@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section>
+    <div id="header">
+        <div class="container">
+            <p class="line0"><strong><span style="color:#ff004f">Mounsif</span>.dev</strong></p>
+            <h1 class="line1"><span style="color:#ff004f">F</span>ull stack Web Developer</h1>
+                <h2 class="line2">Hi I'm <span>Mounsif</span> , I build Websites <br>For small and medium Businesses</h2>
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="#header">home</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    <i id="x-icons" class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i  class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <img id="codingbackground" src="/img/img.png">
+        </div>
+    </div>
+    </section>
+
+    <!-- ---------------about------------------- -->
+    <section>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img class="img2" src="/img/pexels-djordje-petrovic-2102416.jpg"></img>
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="aboutme">About me</h1>
+                        <p class="parag">Hi, I'm Mounsif, a passionate 22-year-old Full Stack Web Developer specializing in creating modern, user-friendly websites for medium and small businesses.<br>
+                            As a freelancer, I prioritize high-quality work, exceptional service, and building lasting client relationships. Let's collaborate and bring your vision to life!
+                        </p>
+                        <p class="parag2">Web Development skills</p>
+                        <ul class="ulist">
+                            <li><span>Front-end Development:</span><br>Javascript , Html , Css, React, bootstrap</li>
+                            <li><span>Back-end Development:</span><br>Python , Django , SQLlite, Flask</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------portfolio------------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img class="hh" src="/img/pomo.png">
+                        <div class="layer">
+                            <h3>Pomodoro Web App</h3>
+                            <p>i always needed a pomodoro app while working , so i tought why not make own one , so i made a pomodoro and note taking web app also the possibility to create an account and save notes and settings in a data base</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                    <img src="/img/finance.png">
+                        <div class="layer">
+                        <h3>Finance</h3>
+                        <p>finance is a back end project that use stocks web api and sqllite to sell and buy stocks</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/img/homepage.png">
+                            <div class="layer">
+                            <h3>Home page</h3>
+                            <p>home page is a Front end project that shows deteils about some exotic cars</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------- contact me ------------- -->
+        <div id="contact">
+            <h1 class="sub-title">Contact me</h1>
+            <P><i class="fas fa-paper-plane"></i>monsefnesfanestudy@gmail.com</P>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <br>
+            <br>
+        </div>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    var xIcons = document.getElementById("x-icons")
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+    function openmenu(){
+        sidemenu.style.right = "0"
+        xIcons.style.marginLeft = "0px"
+    }
+</script>
+
+</body>
+</html>
