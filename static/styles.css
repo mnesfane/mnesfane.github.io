@@ -19,14 +19,14 @@ body{
 
 #codingbackground {
     clip-path: polygon(83% 0, 100% 0, 100% 100%, 51% 100%);
-    float: right;
     height: 100vh;
     max-width: 100%;
     background-size: cover;
     background-position: center center;
     position: absolute;
     top: 0;
-    left: 0;
+    left: auto;
+    right: 0;
     z-index: -1;
 }
 
